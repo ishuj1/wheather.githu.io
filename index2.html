@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dinosaur Game</title>
+	<style>
+		body {
+			background-color: #f9f9f9;
+		}
+		#game {
+			width: 600px;
+			margin: 50px auto;
+			border: 1px solid #ccc;
+			padding: 20px;
+		}
+		#dino {
+			position: relative;
+			width: 100px;
+			height: 100px;
+			background-image: url('dino.png');
+			background-size: contain;
+			background-repeat: no-repeat;
+			animation: run 1s infinite linear;
+		}
+		@keyframes run {
+			0% {
+				left: 0px;
+			}
+			100% {
+				left: 500px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="game">
+		<div id="dino"></div>
+	</div>
+</body>
+</html>
